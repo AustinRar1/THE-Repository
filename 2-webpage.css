@@ -144,10 +144,12 @@ body, html {
     margin: 0;
     font-family: Arial;
 }
+
+
 .navBar {
     
     font-family: Pacifico;
-    background-color: #555;
+    background-color: #555; 
     color: white;
     float: left;
     border: none;
