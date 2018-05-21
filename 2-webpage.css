@@ -3,7 +3,9 @@
     src:url("Pacifico.ttf")}
 
 body, html{
-    background:url('C:\Users\ajrar\Documents\JavaScriptMay2018\Projects\ProjectAssets\cbbackground.jpg');
+
+    background:url('./assets/cbbackground.jpg') no-repeat fixed;
+    background-size: cover;
     /* background-color: black; */
     height: 100%;
     margin: 0;
@@ -165,25 +167,29 @@ body, html {
     height: 100%;
 }
 
-#Store {background-color: rgb(37, 25, 23);}
-#Contact {background-color: black;}
-#Social {background-color: rgb(199, 186, 169);}
+#Store {background-color: rgba(74, 51, 47, 0.75);}
+#Contact {background-color: rgba(10, 10, 10, .75) ;}
+#Social {background-color: rgba(199, 186, 169 .75);}
 /******************
 store page
 ******************/
-.storePageContent{
+.storePageContent{ 
+    display: inline-block;
+    
+    margin: 20px;
     opacity: 10%;
-    position: relative;
+    position: relative ;
+    
 }
 .storeMargins{
-    opacity: 10%;
+    width: 200px;
     border: 1px solid #ccc;
 }
 .storeMargins:hover{
     border: solid 1px #777
 }
 .storeImages img{
-width: 15%;
+    width: 100%;
     height: auto;
 }
 .desc{
@@ -213,7 +219,7 @@ width: 15%;
 }
 .clearfix:after{
     content:'';
-    display: inline-block;
+    display: block;
     clear: both;
 }
 
