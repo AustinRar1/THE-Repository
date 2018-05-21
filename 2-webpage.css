@@ -1,0 +1,253 @@
+@font-face{
+    font-family: Pacificoimport;
+    src:url("Pacifico.ttf")}
+
+body, html{
+    background:url('C:\Users\ajrar\Documents\JavaScriptMay2018\Projects\ProjectAssets\cbbackground.jpg');
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* bobber bikes */
+.bikeContainer{
+    position: relative;
+    display: inline-block;
+    width: 33.1%;
+    height: 100%;
+}
+#bobberImage img{
+    width: 100%;
+    height: auto;
+}
+.bobberTextOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 99.2%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(145, 145, 145, 0.571);
+}
+.bikeContainer:hover #bobberImage{
+    opacity: .8;
+}
+.bobberText{
+    color: black;
+    font-size: 33px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: Pacifico
+}
+.bikeContainer:hover .bobberTextOverlay{
+    opacity: .9;
+}
+
+/* Classics Bikes*/
+#classicImage img{
+    width: 100%;
+    height: auto;
+    
+}
+.classicTextOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     width: 100%;
+    height: 99.2%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(145, 145, 145, 0.571);
+}
+.bikeContainer:hover #classicImage{
+    opacity: .8;
+}
+.classicText{
+    color: black;
+    font-size: 33px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: Pacifico
+}
+.bikeContainer:hover .classicTextOverlay{
+    opacity: .9;
+}
+/* brat bikes */
+#bratImage img{
+    width: 100%;
+    height: auto;
+}
+.bratTextOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 99.2%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(145, 145, 145, 0.571);
+}
+.bikeContainer:hover #bratImage{
+opacity: .8;
+}
+.bratText{
+    color: black;
+    font-size: 33px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: Pacifico
+}
+.bikeContainer:hover .bratTextOverlay{
+    opacity: .9;    
+}  
+/************************
+About Section
+************************/
+
+.about_Header{
+    text-align: center;
+    font-family: 'Arial Narrow';
+    margin: 10px;
+    color: white;
+    font-size: 32px;
+}
+.about_Info{
+    font-family: 'Arial Narrow';
+    font-weight: 200;
+    font-size: 29px;
+}
+/*******************************
+Nav bar
+*******************************/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+.navBar {
+    
+    font-family: Pacifico;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 25px;
+    width: 33.3%;
+}
+.navBar:hover {
+    background-color: rgb(130, 128, 128);
+}
+.navTab {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Store {background-color: rgb(37, 25, 23);}
+#Contact {background-color: black;}
+#Social {background-color: rgb(199, 186, 169);}
+/******************
+store page
+******************/
+.storePageContent{
+    table-layout: inline-block ;
+    position: relative;
+}
+.storeMargins{
+    
+    border: 1px solid #ccc;
+}
+.storeMargins:hover{
+    border: solid 1px #777
+}
+.storeImages img{
+width: 15%;
+    height: auto;
+    
+}
+.desc{
+    padding: 15px;
+    text-align:center;
+}
+*{
+    box-sizing: border-box;
+}
+.responsive{
+    padding:0 6px;
+    float: right;
+    width: 24.99999%;
+    position: center;
+}
+@media only screen and (max-width:50px){
+    .responsive{
+        width: 49.99999%;
+        margin: 6px 0;
+
+    }
+}
+@media only screen and (max-width: 70px){
+    .responsive{
+        width: 50%;
+    }
+}
+.clearfix:after{
+    content:'';
+    display: inline-block;
+    clear: both;
+}
+
+.Contact{
+    font-family: Pacifico;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: gray;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+}

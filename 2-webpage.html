@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CafeCafe</title>
+    <link rel="stylesheet" href="2-webpage.css">
+</head>
+<body>
+    <!-- <div class="background"><a href="C:\Users\ajrar\Documents\JavaScriptMay2018\Projects\ProjectAssets\HCB Brat.jpg"></a></div> -->
+    <!-- Customs Info -->
+        <header>
+                <nav id="LinkToLocation"><div class="container">
+                    <div class="bikeContainer">
+                            <div id="bobberImage">
+                                <img src="..\Storfront\Assets\Virago.jpg"  height="801" width="1200">
+                                    <div class="bobberTextOverlay">
+                                            <div class="bobberText"><b>Custom Bobbers</b>
+                                            </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="bikeContainer">
+                        <div id="classicImage">
+                            <img src="..\Storfront\Assets\classic cafe.jpg" height="801" width="1200">
+                                <div class="classicTextOverlay">
+                                    <div class="classicText"><b>Custom Classics</b>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                        <div class="bikeContainer">
+                             <div id="bratImage">
+                                    <img src="..\Storfront\Assets\Hondabrat.jpg">
+                                        <div class="bratTextOverlay">
+                                                <div class="bratText"><b>Custom Brats</b>
+                                                </div>        
+                                        </div>
+                            </div>
+                        </div>
+                </nav>
+        </header>  
+       <!-- About Section  -->
+<div class="about_Section">
+    <div class="about_Header"><b>About</b>
+        <div class="about_Info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore labore aperiam dolor delectus ab eligendi veniam dignissimos ipsa voluptates beatae consectetur repudiandae enim, impedit ea, porro eos consequatur illum fuga!
+            Lorem ipsu  m, dolor sit amet consectetur adipisicing elit. Doloribus molestiae veniam voluptatibus nostrum autem sint dolor placeat a rerum corporis ab voluptas quidem voluptatum ipsam, rem perferendis reprehenderit tempore officia.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima enim placeat, numquam quod autem beatae quidem perspiciatis quaerat impedit et? Fugiat iusto adipisci sequi iure omnis unde quia non itaque.
+            Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia temporibus vel quidem est officia ratione excepturi eius sed maxime. Cumque sed harum voluptatem quis ipsum nostrum culpa recusandae, quia enim! Quos officiis alias molestias mollitia architecto deserunt necessitatibus distinctio deleniti, temporibus cumque soluta quia tempora eveniet odit maiores dicta. Dicta, culpa eligendi!
+        </div>
+    </div>
+</div>
+<!-- NavTabs and Store Front -->
+<div>
+    <button class="navBar" onclick="openPage('Store', this, 'rgb(37, 25, 23')" id="defaultOpen">Store</button>
+    <button class="navBar" onclick="openPage('Contact', this, 'black')">Contact</button>
+    <button class="navBar" onclick="openPage('Social', this, 'rgb(199, 186, 169)')">Social</button>
+
+    <div id="Store" class="navTab">
+        <div class="storePageContent">
+            <div class="storeMargins">
+                <div class="storeImages">
+                    <a target="_Blank" href="..\Storfront\Assets\store photo.jpg">
+                        <img src="..\Storfront\Assets\store photo.jpg" alt="" width="60">
+                    </a>
+                    <div class="desc">GSXR Front Forks (199.95$) USD</div>
+                </div>
+            </div>
+        </div>
+        <div class="storePageContent">
+                <div class="storeMargins">
+                    <div class="storeImages">
+                        <a target="_Blank" href="..\Storfront\Assets\store photo1.jpg">
+                            <img src="..\Storfront\Assets\store photo1.jpg" alt="" width="60">
+                        </a>
+                        <div class="desc">GSXR Triple Tree (89.98$) USD</div>
+                    </div>
+                </div>
+            </div>
+            <div class="storePageContent">
+                    <div class="storeMargins">
+                        <div class="storeImages">
+                            <a target="_Blank" href="..\Storfront\Assets\store photo2.jpeg">
+                                <img src="..\Storfront\Assets\store photo2.jpeg" alt="" width="60">
+                            </a>
+                            <div class="desc">CB750 Disc Break Conversion(148.97$) USD</div>
+                        </div>
+                    </div>
+                    <div class="storePageContent">
+                            <div class="storeMargins">
+                                <div class="storeImages">
+                                    <a target="_Blank" href="..\Storfront\Assets\store photo3.jpg">
+                                        <img src="..\Storfront\Assets\store photo3.jpg" alt="" width="60">
+                                    </a>
+                                    <div class="desc">CB750 Rear Wheel (199.98$) USD</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="clearfix"></div>
+
+    </div>
+
+    <div id="Contact" class="navTab">
+            <body>
+
+                    <h3>Any questions? Get in touch!</h3>
+                    
+                    <div class="container">
+                      <form action="/action_page.php">
+                        <label for="fname">First and Last Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
+    </div>
+
+    <div id="Social" class="navTab">
+        <h3>Social</h3>
+        <p>Check out some of our buyers projects on our social media pages!</p>
+    </div>
+
+
+    <script>
+    function openPage(pageName,elmnt,color) {
+        var i, tabcontent, Tab;
+        tabcontent = document.getElementsByClassName("navTab");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        Tab = document.getElementsByClassName("navBar");
+        for (i = 0; i < Tab.length; i++) {
+            Tab[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
+
+</div>
+</body>
+</html>
