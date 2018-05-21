@@ -4,7 +4,7 @@
 
 body, html{
     background:url('C:\Users\ajrar\Documents\JavaScriptMay2018\Projects\ProjectAssets\cbbackground.jpg');
-    background-color: black;
+    /* background-color: black; */
     height: 100%;
     margin: 0;
     font-family: Arial;
@@ -172,11 +172,11 @@ body, html {
 store page
 ******************/
 .storePageContent{
-    table-layout: inline-block ;
+    opacity: 10%;
     position: relative;
 }
 .storeMargins{
-    
+    opacity: 10%;
     border: 1px solid #ccc;
 }
 .storeMargins:hover{
@@ -185,7 +185,6 @@ store page
 .storeImages img{
 width: 15%;
     height: auto;
-    
 }
 .desc{
     padding: 15px;
